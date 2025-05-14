@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id = "movie3" class = "io.pragra.feb2025ioc.Movie.Movie">
+        <property name="movieID" value="101"></property>
+        <property name="movieName" value="RRR"></property>
+        <property name="releaseYear" value="2022"></property>
+        <property name="genres" value="Action"></property>
+        <property name="cast" >
+            <list>
+                <value>Ajay Devgn</value>
+                <value>Ram Charan</value>
+                <value>Alia Bhatt</value>
+                <value>N T Rama Rao</value>
+                <value>Twinkle Sharma</value>
+            </list>
+        </property>
+        <property name="castSalary">
+            <map>
+                <entry key = "Ajay Devgn" value = "100000"/>
+                <entry key = "Ram Charan" value = "120000" />
+                <entry key = "Alia Bhatt" value = "123000" />
+                <entry key = "N T Rama Rao" value = "130000" />
+                <entry key = "Twinkle Sharma" value = "90000" />
+            </map>
+        </property>
+    </bean>
+
+    <!-- Define Group Bean with list of Movie beans -->
+   <!-- <bean id = "group1" class="io.pragra.feb2025ioc.Movie.Group">
+        <property name = "movieList">
+            <list>
+                <ref bean="movie3"></ref>
+            </list>
+        </property>
+
+    </bean>-->
+
+
+    <!-- Group bean with list of anonymous Movie Bean -->
+
+    <!--<bean id ="group1" class = "io.pragra.feb2025ioc.Movie.Group">
+        <property name="movieList">
+            <list>
+                <bean class="io.pragra.feb2025ioc.Movie.Movie">
+                    <property name="movieID" value="101"></property>
+                    <property name="movieName" value="RRR"></property>
+                    <property name="releaseYear" value="2022"></property>
+                    <property name="genres" value="Action"></property>
+                    <property name="cast" >
+                        <list>
+                            <value>Ajay Devgn</value>
+                            <value>Ram Charan</value>
+                            <value>Alia Bhatt</value>
+                            <value>N T Rama Rao</value>
+                            <value>Twinkle Sharma</value>
+                        </list>
+                    </property>
+                    <property name="castSalary">
+                        <map>
+                            <entry key = "Ajay Devgn" value = "100000"/>
+                            <entry key = "Ram Charan" value = "120000" />
+                            <entry key = "Alia Bhatt" value = "123000" />
+                            <entry key = "N T Rama Rao" value = "130000" />
+                            <entry key = "Twinkle Sharma" value = "90000" />
+                        </map>
+                    </property>
+                </bean>
+            </list>
+
+        </property>
+    </bean>-->
+
+
+<!-- Map with bean reference as value -->
+    <!--<bean id = "myBean" class = "io.pragra.feb2025ioc.Movie.MyBean ">
+        <property name="movieMap">
+            <map>
+                <entry key = "a" value-ref="movie3"></entry>
+            </map>
+        </property>
+    </bean> -->
+
+</beans>

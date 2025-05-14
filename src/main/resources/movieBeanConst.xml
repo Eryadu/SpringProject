@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id ="movie1" class = "io.pragra.feb2025ioc.Movie.Movie">
+        <constructor-arg name = "movieID" value="101"></constructor-arg>
+        <constructor-arg name = "movieName" value="RRR"></constructor-arg>
+        <constructor-arg name = "releaseYear" value="2022"></constructor-arg>
+        <constructor-arg name = "genres" value="Action"></constructor-arg>
+        <constructor-arg name = "cast" >
+            <list>
+                <value>Ajay Devgn</value>
+                <value>Ram Charan</value>
+                <value>Alia Bhatt</value>
+                <value>N T Rama Rao</value>
+                <value>Twinkle Sharma</value>
+            </list>
+        </constructor-arg>
+        <constructor-arg name = "castSalary">
+            <map>
+                <entry key = "Ajay Devgn" value = "100000" />
+                <entry key = "Ram Charan" value = "120000" />
+                <entry key = "Alia Bhatt" value = "123000" />
+                <entry key = "N T Rama Rao" value = "130000" />
+                <entry key = "Twinkle Sharma" value = "90000" />
+            </map>
+        </constructor-arg>
+
+    </bean>
+    <!--<bean id ="movie2" class = "io.pragra.feb2025ioc.Movie.Movie">
+        <constructor-arg name = "movieID" value="102"></constructor-arg>
+        <constructor-arg name = "movieName" value="HomeAlone"></constructor-arg>
+        <constructor-arg name = "releaseYear" value="2020"></constructor-arg>
+        <constructor-arg name = "genres" value="Action"></constructor-arg>
+
+    </bean>-->
+
+</beans>
