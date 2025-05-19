@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="state" class="io.pragra.feb2025ioc.AutoWiringSpring.State">
+        <property name="name" value="Toronto"></property>
+    </bean>
+
+    <bean id="city" class="io.pragra.feb2025ioc.AutoWiringSpring.City"  ></bean>
+</beans>

@@ -1,4 +1,7 @@
 
+
+
+
 https://www.youtube.com/watch?v=d4dcV7Kt3SI&list=PLA3GkZPtsafacdBLdd3p1DyRd5FGfr3Ue&index=4
 
 bunch of method is called class.
@@ -16,6 +19,18 @@ Java min 8
 Spring Framework version 6 (not Backward compatible ->Jakarta API) work with
 Spring Boot version 3 (not Backward compatible)
 Java min 17
+
+## Difference between Spring and SpringBoot
+## https://www.turing.com/kb/spring-vs-spring-boots-best-web-apps
+
+
+## BeanFactory is doing lazy loading
+Lazy Loading:
+BeanFactory supports lazy loading, meaning beans are only initialized when they are first accessed.
+
+## ApplicationContext is doing eager loading
+Eager Loading:
+ApplicationContext generally provides eager loading, meaning beans are pre-instantiated when the context is initialized.
 
 
 ## Project meta-data

@@ -10,5 +10,6 @@ public class MainApp {
                                                                         // Package Name +Class Name
         MyClass myClass = (MyClass) context.getBean("myBean");
         myClass.display();
+
     }
 }
