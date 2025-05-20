@@ -7,12 +7,10 @@ public class Driver {
     public static void main(String[] args) {
         // Configuration by XML
         // Loading the Spring XML configuration
-        // file into the spring container and
+        // file into the spring container, and
         // it will create the instance of
         // the bean as it loads into container
        ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("HelloWorld.xml");
-
-
 
         // It will close the spring container
         // and as a result invokes the
@@ -23,7 +21,7 @@ public class Driver {
 //-------------------------------------------------------------------------------------------------------
         // Configuration by Interface
         // Loading the Spring XML configuration
-        // file into the spring container and
+        // file into the spring container, and
         // it will create the instance of the bean
         // as it loads into container
       ConfigurableApplicationContext context2 = new ClassPathXmlApplicationContext("HelloWorldInterface.xml");
@@ -36,7 +34,7 @@ public class Driver {
         //-------------------------------------------------------------------------------------------------------
         // Configuration by Annotation
         // Loading the Spring XML configuration
-        // file into the spring container and
+        // file into the spring container, and
         // it will create the instance of the bean
         // as it loads into container
         ConfigurableApplicationContext context3 = new ClassPathXmlApplicationContext("HelloWorldAnnotation.xml");

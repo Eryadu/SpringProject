@@ -15,4 +15,12 @@ public class MyClass {
     public void display(){
         System.out.println("Property value : " + propertyName);
     }
+
+    public void init(){
+        System.out.println("Initialize Bean");
+    }
+    public void destroy(){
+        System.out.println("Destroying Bean");
+    }
+
 }
