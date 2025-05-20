@@ -10,14 +10,19 @@ import org.springframework.stereotype.Service;
 public class NotificationService {
 
     private final EmailService emailService;
-    private final SmsService smsService;
+    private SmsService smsService;
 
+    //Constructor D-injection
     @Autowired
-    public NotificationService(@Qualifier ("emailService") EmailService emailService, @Qualifier ("smsService") SmsService smsService) {
+    public NotificationService( EmailService emailService) {
         this.emailService = emailService;
-        this.smsService = smsService;
     }
 
+    // Setter D-injection
+    @Autowired
+    public void setSmsService(SmsService smsService) {
+        this.smsService=smsService;
+    }
     public void notify(String msg){
         emailService.send(msg);
         smsService.send(msg);

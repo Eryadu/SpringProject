@@ -2,6 +2,7 @@ package io.pragra.feb2025ioc;
 
 import io.pragra.feb2025ioc.AutoWiringSpring.AutoWiringSpringBoot.NotificationService;
 import io.pragra.feb2025ioc.AutoWiringSpring.AutoWiringSpringBoot.User;
+import io.pragra.feb2025ioc.BeanScope.BeanTester;
 import io.pragra.feb2025ioc.BeansSpringBoot.MyClassTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -40,10 +41,16 @@ public class Feb2025iocApplication   {
 
 
 		//NotificationService services = context.getBean(NotificationService.class);
-
-		NotificationService notificationService = context.getBean(NotificationService.class);
+		// AutoWiring Spring boot Package
+		/*NotificationService notificationService = context.getBean(NotificationService.class);
 		User user = new User("Alice");
-		notificationService.notify("Welcome , " + user.getName());
+		notificationService.notify("Welcome , " + user.getName());*/
+
+		//BeanScope Package
+		BeanTester beanTester = context.getBean(BeanTester.class);
+		beanTester.testScope();
+		context.close();
+
 
 	}
 
