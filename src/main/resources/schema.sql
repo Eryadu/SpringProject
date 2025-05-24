@@ -1,0 +1,8 @@
+CREATE TABLE EMPLOYEE (EMPLOYEE_ID INT PRIMARY KEY ,
+                       EMPLOYEE_NAME VARCHAR(255),
+                       EMPLOYEE_EMAIL VARCHAR(255),
+                       EMPLOYEE_PHONE_NO INT );
+
+CREATE TABLE STUDENT(ID INT PRIMARY KEY,
+                     NAME VARCHAR(255),
+                     DEPARTMENT VARCHAR(255));

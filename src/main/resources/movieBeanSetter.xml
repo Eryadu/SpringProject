@@ -5,7 +5,7 @@
 
     <bean id = "movie3" class = "io.pragra.feb2025ioc.Movie.Movie">
         <property name="movieID" value="101"></property>
-        <property name="movieName" value="RRR"></property>
+        <property name="movieName" value="#{'RRR'.length()}"></property> <!-- sPel Expression -->
         <property name="releaseYear" value="2022"></property>
         <property name="genres" value="Action"></property>
         <property name="cast" >

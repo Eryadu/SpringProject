@@ -1,5 +1,7 @@
 package io.pragra.feb2025ioc.BeansAnnotation;
 
+import io.pragra.feb2025ioc.Feb2025iocApplication;
+import org.springframework.boot.SpringApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -7,9 +9,11 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class MainApp {
     public static void main(String[] args) {
 
-        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(io.pragra.feb2025ioc.BeansAnnotation.AppConfig.class);
+        //ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(io.pragra.feb2025ioc.BeansAnnotation.AppConfig.class);
                                                                         // Package Name +Class Name
-       /* MyClass myClass = (MyClass) context.getBean("myBean");
+
+        ConfigurableApplicationContext context = SpringApplication.run(Feb2025iocApplication.class, args);
+        /* MyClass myClass = (MyClass) context.getBean("myBean");
         myClass.display();
         System.out.println(myClass);*/
 
